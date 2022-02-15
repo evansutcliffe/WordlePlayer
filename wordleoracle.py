@@ -1,7 +1,7 @@
 import numpy as np
 import random 
 
-class WordOracle (): # inherits from abstract class Shape
+class WordleOracle (): # inherits from abstract class Shape
         def __init__ (self):
             self.secret_word = ""
             self.playing = False
@@ -57,3 +57,22 @@ def get_possible_words():
 
 english_words = load_words()
 wordle_words = [word for word in english_words if len(word)==5]
+
+
+
+# my_sum = 0
+# for (letter,freq) in letter_freqs:
+#     my_sum+=freq
+# print(my_sum)
+# #normalise
+# x = []
+# for i in range(len(letter_freqs)):
+#     (letter,freq) = letter_freqs[i]
+#     x.append((letter,freq/my_sum))
+# # to dict
+# letter_freq_dict = {}
+# for (letter,freq) in x:
+#     letter_freq_dict[letter.lower()]=freq
+    
+# with open('letter_freq.json', 'w') as outfile:
+# json.dump(letter_freq_dict, outfile)
