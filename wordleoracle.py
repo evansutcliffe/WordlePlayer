@@ -10,7 +10,7 @@ class WordleOracle ():
             self.results_list = []
             
         def play (self):
-            self.secret_word = random.choice(self.dict)
+            self.secret_word = random.choice(self.dictionary)
             self.turn = 0
             self.playing = True
             
